@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 65px;
+    padding: 0;
+    color: #ce00f2; /* Light Gray */
+    background-color: #050405;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #12111218;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.profile-pic img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #12f61da7; /* Teal Blue */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    width: 100%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #CCCCCC; /* Light Gray */
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #444;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 270px; /* Adjusted for sidebar width */
+    background-color: #111;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #CCCCCC; /* Light Gray */
+}
+
+.intro h1 span {
+    color: #88C1BB; /* Teal Blue */
+}
+
+.intro p {
+    font-size: 18px;
+    color: #AAAAAA; /* Slightly lighter gray */
+}
+
+.dynamic-text {
+    color: #66e1e7; /* Teal Blue */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #88C1BB; /* Teal Blue */
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #88C1BB; /* Teal Blue */
+    text-align: center;
+}
+
+section p, section h3 {
+    color: #AAAAAA; /* Slightly lighter gray */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills div {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #222;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.skills div:hover {
+    transform: translateY(-5px);
+}
+
+.skills i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #88C1BB; /* Teal Blue */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    margin-top: 20px;
+    color: #666;
+    border-top: 1px solid #333;
+}
